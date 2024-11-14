@@ -89,7 +89,7 @@ await dio.post(
                   width: double.infinity,
                   child: ElevatedButton(
                     onPressed: () {
-                      // Validate the form before sending data
+                      
                       if (formKey.currentState?.validate() ?? false) {
                         _sendSignupRequest(
                           nameController.text,
@@ -103,7 +103,7 @@ await dio.post(
                           ),
                         );
                       } else {
-                        // Show a message if the form data is invalid
+                        
                         ScaffoldMessenger.of(context).showSnackBar(
                           SnackBar(
                             content: Text('Invalid data'),
