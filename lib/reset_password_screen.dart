@@ -14,7 +14,7 @@ class ResetPasswordScreen extends StatelessWidget {
     final dio = Dio();
 
 await dio.post(
-      'https://myronchuk.requestcatcher.com/reset_password', // Replace with actual reset password API endpoint
+      'https://myronchuk.requestcatcher.com/reset_password', 
       data: {
         'email': email,
       },
